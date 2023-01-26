@@ -123,7 +123,9 @@ namespace Intersect.Enums
 
         Less,
 
-        NotEqual
+        NotEqual,
+
+        Between,
 
     }
 

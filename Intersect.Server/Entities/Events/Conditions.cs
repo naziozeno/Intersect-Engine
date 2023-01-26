@@ -682,6 +682,13 @@ namespace Intersect.Server.Entities.Events
                     }
 
                     break;
+                case VariableComparators.Between:
+                    if (varVal >= comparison.Value && varVal <= comparison.MaxValue)
+                    {
+                        return true;
+                    }
+
+                    break;
             }
 
             return false;

@@ -468,6 +468,10 @@ namespace Intersect.Editor.Localization
                     pVar = EventConditionDesc.notequal.ToString(value);
 
                     break;
+                case VariableComparators.Between:
+                    pVar = EventConditionDesc.between.ToString(value, comparison.MaxValue);
+
+                    break;
             }
 
             return pVar;
@@ -2361,7 +2365,8 @@ Tick timer saved in server config.json.";
                 {2, @"Less Than or Equal To"},
                 {3, @"Greater Than"},
                 {4, @"Less Than"},
-                {5, @"Does Not Equal"}
+                {5, @"Does Not Equal"},
+                {6, @"Between"},
             };
 
             public static Dictionary<int, LocalizedString> conditions = new Dictionary<int, LocalizedString>

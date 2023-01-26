@@ -65,6 +65,8 @@ namespace Intersect.Editor.Forms.Editors.Events.Event_Commands
             chkHasElse.Checked = refCommand.ElseEnabled;
             SetupFormValues((dynamic) refCommand);
             mLoading = false;
+
+            ExtraLoad();
         }
 
         private void InitLocalization()
@@ -707,6 +709,8 @@ namespace Intersect.Editor.Forms.Editors.Events.Event_Commands
             cmbCompareGlobalVar.Enabled = rdoVarCompareGlobalVar.Checked;
             cmbCompareGuildVar.Enabled = rdoVarCompareGuildVar.Checked;
             cmbCompareUserVar.Enabled = rdoVarCompareUserVar.Checked;
+
+            nudMaxValue.Enabled = rdoVarCompareStaticValue.Checked && cmbNumericComparitor.SelectedIndex == (int)VariableComparators.Between;
         }
 
         private void UpdateVariableElements()
@@ -870,6 +874,7 @@ namespace Intersect.Editor.Forms.Editors.Events.Event_Commands
             {
                 rdoVarCompareStaticValue.Checked = true;
                 nudVariableValue.Value = integerComparison.Value;
+                nudMaxValue.Value = integerComparison.MaxValue;
             }
 
             UpdateNumericVariableElements();
@@ -974,6 +979,11 @@ namespace Intersect.Editor.Forms.Editors.Events.Event_Commands
             if (rdoVarCompareStaticValue.Checked)
             {
                 comparison.Value = (long) nudVariableValue.Value;
+
+                if(comparison.Comparator == VariableComparators.Between)
+                {
+                    comparison.MaxValue = (long) nudMaxValue.Value;
+                }
             }
             else if (rdoVarCompareGlobalVar.Checked)
             {
