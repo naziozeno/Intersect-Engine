@@ -74,6 +74,16 @@ namespace Intersect.Client.Core.Controls
             CreateControlMap(Control.Hotkey8, new ControlValue(Keys.None, Keys.D8), ControlValue.Default);
             CreateControlMap(Control.Hotkey9, new ControlValue(Keys.None, Keys.D9), ControlValue.Default);
             CreateControlMap(Control.Hotkey0, new ControlValue(Keys.None, Keys.D0), ControlValue.Default);
+            CreateControlMap(Control.Hotkey01, new ControlValue(Keys.None, Keys.F1), ControlValue.Default);
+            CreateControlMap(Control.Hotkey02, new ControlValue(Keys.None, Keys.F2), ControlValue.Default);
+            CreateControlMap(Control.Hotkey03, new ControlValue(Keys.None, Keys.F3), ControlValue.Default);
+            CreateControlMap(Control.Hotkey04, new ControlValue(Keys.None, Keys.F4), ControlValue.Default);
+            CreateControlMap(Control.Hotkey05, new ControlValue(Keys.None, Keys.F5), ControlValue.Default);
+            CreateControlMap(Control.Hotkey06, new ControlValue(Keys.None, Keys.F6), ControlValue.Default);
+            CreateControlMap(Control.Hotkey07, new ControlValue(Keys.None, Keys.F7), ControlValue.Default);
+            CreateControlMap(Control.Hotkey08, new ControlValue(Keys.None, Keys.F8), ControlValue.Default);
+            CreateControlMap(Control.Hotkey09, new ControlValue(Keys.None, Keys.F9), ControlValue.Default);
+            CreateControlMap(Control.Hotkey00, new ControlValue(Keys.None, Keys.F10), ControlValue.Default);
             CreateControlMap(Control.Screenshot, new ControlValue(Keys.None, Keys.F12), ControlValue.Default);
             CreateControlMap(Control.OpenMenu, new ControlValue(Keys.None, Keys.Escape), ControlValue.Default);
             CreateControlMap(Control.OpenInventory, new ControlValue(Keys.None, Keys.I), ControlValue.Default);
@@ -84,7 +94,7 @@ namespace Intersect.Client.Core.Controls
             CreateControlMap(Control.OpenFriends, new ControlValue(Keys.None, Keys.F), ControlValue.Default);
             CreateControlMap(Control.OpenGuild, new ControlValue(Keys.None, Keys.G), ControlValue.Default);
             CreateControlMap(Control.OpenSettings, new ControlValue(Keys.None, Keys.O), ControlValue.Default);
-            CreateControlMap(Control.OpenDebugger, new ControlValue(Keys.None, Keys.F2), ControlValue.Default);
+            CreateControlMap(Control.OpenDebugger, new ControlValue(Keys.None, Keys.Home), ControlValue.Default);
             CreateControlMap(Control.OpenAdminPanel, new ControlValue(Keys.None, Keys.Insert), ControlValue.Default);
             CreateControlMap(Control.ToggleGui, new ControlValue(Keys.None, Keys.F11), ControlValue.Default);
             CreateControlMap(Control.TurnAround, new ControlValue(Keys.None, Keys.Control), ControlValue.Default);
