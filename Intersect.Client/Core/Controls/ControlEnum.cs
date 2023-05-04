@@ -1,4 +1,4 @@
-﻿namespace Intersect.Client.Core.Controls
+namespace Intersect.Client.Core.Controls
 {
 
     public enum Control
@@ -41,6 +41,26 @@
         Hotkey9,
 
         Hotkey0,
+
+        Hotkey01,
+
+        Hotkey02,
+
+        Hotkey03,
+
+        Hotkey04,
+
+        Hotkey05,
+
+        Hotkey06,
+
+        Hotkey07,
+
+        Hotkey08,
+
+        Hotkey09,
+
+        Hotkey00,
 
         Screenshot,
 
