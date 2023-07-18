@@ -715,7 +715,7 @@ namespace Intersect.Editor.Forms.Editors.Events.Event_Commands
             cmbCompareGuildVar.Enabled = rdoVarCompareGuildVar.Checked;
             cmbCompareUserVar.Enabled = rdoVarCompareUserVar.Checked;
 
-            nudMaxValue.Enabled = rdoVarCompareStaticValue.Checked && cmbNumericComparitor.SelectedIndex == (int)VariableComparators.Between;
+            nudMaxValue.Enabled = rdoVarCompareStaticValue.Checked && cmbNumericComparitor.SelectedIndex == (int)VariableComparator.Between;
         }
 
         private void UpdateVariableElements()
@@ -989,7 +989,7 @@ namespace Intersect.Editor.Forms.Editors.Events.Event_Commands
             {
                 comparison.Value = (long) nudVariableValue.Value;
 
-                if(comparison.Comparator == VariableComparators.Between)
+                if(comparison.Comparator == VariableComparator.Between)
                 {
                     comparison.MaxValue = (long) nudMaxValue.Value;
                 }

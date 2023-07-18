@@ -473,7 +473,7 @@ namespace Intersect.Editor.Localization
                     pVar = EventConditionDesc.notequal.ToString(value);
 
                     break;
-                case VariableComparators.Between:
+                case VariableComparator.Between:
                     pVar = EventConditionDesc.between.ToString(value, comparison.MaxValue);
 
                     break;
